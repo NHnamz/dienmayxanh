@@ -1,0 +1,2368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/cadc7f8cf5.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+  <header class="sticky top-0 z-10 text-white nav-bg sm:text-xs">
+    <div class="pt-2.5 ">
+      <section class="mx-auto flex max-w-7xl items-center gap-9 p-2">
+        <h1 class="h-auto w-auto">
+          <a href="#hero"><img class="h-8" src="./img/logo.png" alt="logo"></i></a>
+        </h1>
+        <div class="hidden text-sm md:block border px-3 rounded-md h-12 justify-center" aria-label="main">
+          <a href="#" class="hover:opacity-90">Xem giá, tồn kho tại:<br><span data-province="3" data-district="0"
+              data-ward="0">Hồ Chí Minh</span></a>
+        </div>
+        <form class="flex items-center justify-center">
+          <div class="flex w-50 rounded bg-white text-black">
+            <input type="text" name="search" placeholder="search"
+              class=" border-none bg-transparent px-4 py-1 outline-none focus:outline-none">
+            <button class="m-2 px-4 py-2 text-black">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </form>
+        <div class="hidden space-x-4 text-sm md:block border px-4 rounded-md h-12 text-center" aria-label="main">
+          <a href="#" class="hover:opacity-90">
+            Tài khoản &amp; <br> Đơn hàng
+          </a>
+        </div>
+        <div class="hidden space-x-4 text-sm md:block border p-3 rounded-md h-12 " aria-label="main">
+          <a href="#" class="hover:opacity-90 h-full flex items-center"><i
+              class="fa-solid fa-cart-shopping pr-2"></i>Giỏ hàng</a>
+        </div>
+        <div>
+          <nav class="space-x-4 text-sm " aria-label="main">
+            <a href="#" class="hover:opacity-90">Tư vấn<br>chọn mua</a>
+            <a class="border"></a>
+            <a href="#" class="hover:opacity-90">Khuyến mãi</a>
+            <a class="border"></a>
+            <a href="#" class="hover:opacity-90">Vào bếp</a>
+          </nav>
+        </div>
+      </section>
+    </div>
+    <div class="py-2.5">
+      <section class="mx-auto flex max-w-7xl items-center justify-between p-2">
+        <nav class="space-x-3.5 text-base flex " aria-label="main">
+          <div class="dropdown relative">
+            <div class=" pl-2">
+              <i class="fa-solid fa-bars text-lg"></i>
+              <a href="#" class="hover:opacity-90">Tất cả danh mục</a>
+            </div>
+            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 text-sm">
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/LuxuryIcon-72x72.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap " href="#">Hàng cao
+                    cấp</a>
+                </p>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">TIVI
+                            <a href="/tivi#c=1942&amp;r=710,711,576&amp;o=13&amp;pi=0" class="text-blue-600">Xem tất cả
+                              <i class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/tivi#c=1942&amp;m=2002&amp;r=710,711,576&amp;o=13&amp;pi=0"
+                            class="hover:text-blue-500">Samsung
+                          </a>
+                          <a href="/tivi#c=1942&amp;m=2003&amp;r=710,711,576&amp;o=13&amp;pi=0"
+                            class="hover:text-blue-500">LG
+                          </a>
+                          <a href="/tivi#c=1942&amp;m=722&amp;r=710,711,576&amp;o=13&amp;pi=0"
+                            class="hover:text-blue-500">Sony
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="pt-2 font-medium text-xs">THIẾT BỊ GIẶT - SẤY
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-giat-tu-cham-soc-quan-ao" class="hover:text-blue-500">Tủ chăm sóc quần áo
+                          </a>
+                          <a href="/may-giat#c=1944&amp;p=184697&amp;o=13&amp;priceminmax=20000-63000&amp;pi=0"
+                            class="hover:text-blue-500">Máy giặt - Sấy kết hợp
+                          </a>
+                          <a href="/may-giat#c=1944&amp;o=13&amp;priceminmax=20000-63000&amp;pi=0"
+                            class="hover:text-blue-500">Máy giặt
+                          </a>
+                          <a href="/may-say-quan-ao#c=2202&amp;o=13&amp;priceminmax=20000-25000&amp;pi=0"
+                            class="hover:text-blue-500">Máy sấy
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="pt-2 font-medium text-xs">MÁY LẠNH
+                            <a href="/may-lanh?p=tren-20-trieu" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-lanh-daikin?p=tren-20-trieu" class="hover:text-blue-500">Daikin
+                          </a>
+                          <a href="/may-lanh-gree?p=tren-20-trieu" class="hover:text-blue-500">Gree
+                          </a>
+                          <a href="/may-lanh-lg?p=tren-20-trieu" class="hover:text-blue-500">LG
+                          </a>
+                          <a href="/may-lanh-panasonic?p=tren-20-trieu" class="hover:text-blue-500">Panasonic
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">TỦ LẠNH
+                            <a href="/tu-lanh?p=tren-30-trieu" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/tu-lanh-nhieu-cua?p=tren-30-trieu" class="hover:text-blue-500">Tủ lạnh nhiều cửa
+                          </a>
+                          <a href="/tu-lanh-hitachi?p=tren-30-trieu" class="hover:text-blue-500">Hitachi
+                          </a>
+                          <a href="/tu-lanh-lg?p=tren-30-trieu" class="hover:text-blue-500">LG
+                          </a>
+                          <a href="/tu-lanh-samsung?p=tren-30-trieu" class="hover:text-blue-500">Samsung
+                          </a>
+                          <a href="/tu-lanh-panasonic?p=tren-30-trieu" class="hover:text-blue-500">Panasonic
+                          </a>
+                          <a href="/tu-lanh#c=1943&amp;m=2012&amp;r=928,929&amp;o=13&amp;pi=0"
+                            class="hover:text-blue-500">Sharp
+                          </a>
+                          <a href="/tu-lanh#c=1943&amp;m=2010&amp;r=928,929&amp;o=13&amp;pi=0"
+                            class="hover:text-blue-500">Toshiba
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="pt-2 font-medium text-xs">MÁY RỬA CHÉN/BÁT
+                            <a href="/may-rua-chen?p=tren-20-trieu" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-rua-chen-bosch?p=tren-20-trieu" class="hover:text-blue-500">Bosch
+                          </a>
+                          <a href="/may-rua-chen-electrolux?p=tren-20-trieu" class="hover:text-blue-500">Electrolux
+                          </a>
+                          <a href="/may-rua-chen-candy?p=tren-20-trieu" class="hover:text-blue-500">Candy
+                          </a>
+                          <a href="/may-rua-chen-whirlpool?p=tren-20-trieu" class="hover:text-blue-500">Whirlpool
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">THIẾT BỊ GIA DỤNG
+                          </p>
+                          <a class="border"></a>
+                          <a href="/robot-hut-bui#c=10139&amp;r=793,794&amp;o=13&amp;pi=0"
+                            class="hover:text-blue-500">Robot
+                            hút bụi
+                          </a>
+                          <a href="/may-hut-bui?p=tren-4-trieu#c=1990&amp;r=443&amp;o=3&amp;pi=0"
+                            class="hover:text-blue-500">Hút bụi cây
+                          </a>
+                          <a href="/may-loc-khong-khi?key=m%C3%A1y+l%E1%BB%8Dc+kh%C3%B4ng+kh%C3%AD&amp;sc=new#c=5473&amp;o=13&amp;priceminmax=10000-30000&amp;pi=0"
+                            class="hover:text-blue-500">Máy lọc không khí
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="pt-2 font-medium text-xs">THIẾT BỊ NHÀ BẾP
+                          </p>
+                          <a class="border"></a>
+                          <a href="/noi-com-dien#c=1922&amp;o=3&amp;pi=0" class="hover:text-blue-500">Nồi cơm cao tần
+                          </a>
+                          <a href="/noi-chien-khong-dau#c=9418&amp;o=3&amp;pi=0" class="hover:text-blue-500">Nồi chiên
+                          </a>
+                          <a href="/bep-tu?g=bep-tu-am#c=1982&amp;p=63162&amp;o=3&amp;pi=0"
+                            class="hover:text-blue-500">Bếp
+                            điện âm/đôi
+                          </a>
+                          <a href="/may-ep-trai-cay?g=may-ep-cham#c=2062&amp;p=54518&amp;o=3&amp;pi=0"
+                            class="hover:text-blue-500">Máy ép trái cây
+                          </a>
+                          <a href="/may-hut-mui#c=4645&amp;o=3&amp;pi=0" class="hover:text-blue-500">Hút mùi/ hút khói
+                          </a>
+                          <a href="/may-xay-sinh-to#c=1985&amp;o=3&amp;pi=0" class="hover:text-blue-500">Máy xay Sinh
+                            tố
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">MÁY LỌC NƯỚC
+                            <a href="/may-loc-nuoc#c=3385&amp;o=3&amp;pi=0" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-loc-nuoc-chungho#c=3385&amp;m=20608&amp;o=3&amp;pi=0"
+                            class="hover:text-blue-500">ChungHo
+                          </a>
+                          <a href="/may-loc-nuoc-fuji" class="hover:text-blue-500">Fuji Smart
+                          </a>
+                          <a href="/may-loc-nuoc-ionfarms" class="hover:text-blue-500">IonFarms
+                          </a>
+                          <a href="/may-loc-nuoc-ionpia" class="hover:text-blue-500">IONPIA
+                          </a>
+                          <a href="/may-loc-nuoc-kangen" class="hover:text-blue-500">Kangen
+                          </a>
+                          <a href="/may-loc-nuoc-panasonic#c=3385&amp;m=25865&amp;o=3&amp;pi=0"
+                            class="hover:text-blue-500">Panasonic
+                          </a>
+                          <a href="/may-loc-nuoc-robot#c=3385&amp;m=32486&amp;o=3&amp;pi=0"
+                            class="hover:text-blue-500">Robot
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="pt-2 font-medium text-xs">ĐỒNG HỒ CAO CẤP
+                          </p>
+                          <a class="border"></a>
+                          <a href="/dong-ho-cao-cap" class="hover:text-blue-500">Đồng hồ thời trang
+                          </a>
+                          <a href="/dong-ho-deo-tay-frederique-constant" class="hover:text-blue-500">FREDERIQUE
+                            CONSTANT
+                          </a>
+                          <a href="/dong-ho-deo-tay-titoni" class="hover:text-blue-500">Titoni
+                          </a>
+                          <a href="/dong-ho-deo-tay-certina#c=7264&amp;m=26081&amp;o=8&amp;priceminmax=8000-110000&amp;pi=0"
+                            class="hover:text-blue-500">Certina
+                          </a>
+                          <a href="/dong-ho-deo-tay-movado#c=7264&amp;m=26234&amp;o=8&amp;priceminmax=8000-110000&amp;pi=0"
+                            class="hover:text-blue-500">Movado
+                          </a>
+                          <a href="/dong-ho-deo-tay-orient#c=7264&amp;m=18197&amp;o=8&amp;priceminmax=8000-110000&amp;pi=0"
+                            class="hover:text-blue-500">Orient
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/Hot-73x72.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Tivi</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap" href="#">Loa dàn
+                    karaoke</a>
+                </p>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">TIVI
+                            <a href="/tivi" class="text-blue-600">Xem tất cả <i class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/tivi" class="hover:text-blue-500">Tivi trả góp 0 - 1%
+                          </a>
+                          <a href="/tivi-sony" class="hover:text-blue-500">Sony
+                          </a>
+                          <a href="/tivi-samsung" class="hover:text-blue-500">Samsung
+                          </a>
+                          <a href="/tivi-lg" class="hover:text-blue-500">LG
+                          </a>
+                          <a href="/tivi-tcl" class="hover:text-blue-500">TCL
+                          </a>
+                          <a href="/tivi-casper" class="hover:text-blue-500">Casper
+                          </a>
+                          <a href="https://www.dienmayxanh.com/tivi#c=1942&amp;p=43170,43356,43358,43357&amp;o=9&amp;pi=0"
+                            class="hover:text-blue-500">Từ 32 - 43 inch
+                          </a>
+                          <a href="https://www.dienmayxanh.com/tivi#c=1942&amp;p=43358,44869,45198,43361,43364&amp;o=9&amp;pi=0"
+                            class="hover:text-blue-500">Từ 43 - 55 inch
+                          </a>
+                          <a href="https://www.dienmayxanh.com/tivi#c=1942&amp;r=335,333&amp;o=9&amp;pi=0"
+                            class="hover:text-blue-500">Dưới 7 triệu
+                          </a>
+                          <a href="https://www.dienmayxanh.com/tivi#c=1942&amp;r=711,576&amp;o=9&amp;pi=0"
+                            class="hover:text-blue-500">Tivi cao cấp
+                          </a>
+                          <a href="/may-chieu" class="hover:text-blue-500">Máy chiếu
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">LOA, ÂM THANH
+                            <a href="/loa-ldp" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/dan-loa-dvd?g=loa-keo" class="hover:text-blue-500">Loa kéo
+                          </a>
+                          <a href="/dan-loa-dvd?g=loa-dien" class="hover:text-blue-500">Loa kéo điện
+                          </a>
+                          <a href="/dan-loa-dvd-loa-karaoke-xach-tay" class="hover:text-blue-500">Loa karaoke xách tay
+                          </a>
+                          <a href="/dan-loa-dvd-loa-bluetooth" class="hover:text-blue-500">Loa bluetooth
+                          </a>
+                          <a href="/dan-loa-dvd-loa-thanh" class="hover:text-blue-500">Loa thanh (Soundbar)
+                          </a>
+                          <a href="/dan-loa-dvd#c=2162&amp;p=237140,179130&amp;o=9&amp;pi=0"
+                            class="hover:text-blue-500">Dàn
+                            Karaoke, Amply
+                          </a>
+                          <a href="/dan-loa-dvd?g=dan-am-thanh" class="hover:text-blue-500">Dàn âm thanh
+                          </a>
+                          <a href="/micro-cac-loai" class="hover:text-blue-500">Micro
+                          </a>
+                          <a href="/dan-loa-dvd-nanomax" class="hover:text-blue-500">Loa Nanomax
+                          </a>
+                          <a href="/dan-loa-dvd-sony" class="hover:text-blue-500">Loa Sony
+                          </a>
+                          <a href="/dan-loa-dvd-samsung" class="hover:text-blue-500">Loa Samsung
+                          </a>
+                          <a href="/dan-loa-dvd-lg" class="hover:text-blue-500">Loa LG
+                          </a>
+                          <a href="/dan-loa-dvd-jbl" class="hover:text-blue-500">Loa JBL
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">PHỤ KIỆN TIVI
+                          </p>
+                          <a class="border"></a>
+                          <a href="/cap-hdmi-cap-tivi" class="hover:text-blue-500">Cáp HDMI, cáp Tivi
+                          </a>
+                          <a href="/khung-treo-tivi" class="hover:text-blue-500">Khung treo Tivi
+                          </a>
+                          <a href="/dieu-khien-tivi" class="hover:text-blue-500">Điều khiển TV
+                          </a>
+                          <a href="/android-tv-box" class="hover:text-blue-500">Android TV Box
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/Icons-1-72x72.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Tủ
+                    lạnh</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Tủ
+                    đông</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap" href="#">Tủ mát</a>
+                </p>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">TỦ LẠNH
+                            <a href="/tu-lanh" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/tu-lanh-tra-gop-0-phan-tram" class="hover:text-blue-500">Trả góp 0 - 0.5%
+                          </a>
+                          <a href="/tu-lanh?g=tu-150-300-lit" class="hover:text-blue-500">Tủ lạnh từ 150 - 300 lít
+                          </a>
+                          <a href="/tu-lanh?g=tu-301-400-lit" class="hover:text-blue-500">Tủ lạnh từ 301 - 400 lít
+                          </a>
+                          <a href="/tu-lanh?g=tu-lon-side-by-side" class="hover:text-blue-500">Tủ lạnh Side by side
+                          </a>
+                          <a href="/tu-lanh?g=mini" class="hover:text-blue-500">Tủ lạnh Mini
+                          </a>
+                          <a href="/tu-lanh-panasonic" class="hover:text-blue-500">Panasonic
+                          </a>
+                          <a href="/tu-lanh-samsung" class="hover:text-blue-500">Samsung
+                          </a>
+                          <a href="/tu-lanh-toshiba" class="hover:text-blue-500">Toshiba
+                          </a>
+                          <a href="/tu-lanh-aqua-sanyo" class="hover:text-blue-500">AQUA
+                          </a>
+                          <a href="/tu-lanh-lg" class="hover:text-blue-500">LG
+                          </a>
+                          <a href="/tu-lanh?p=tu-8tr-12tr" class="hover:text-blue-500">Từ 8 - 12 triệu
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">TỦ ĐÔNG, TỦ MÁT
+                            <a href="/tu-dong" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/tu-dong-sanaky" class="hover:text-blue-500">Sanaky
+                          </a>
+                          <a href="/tu-dong-kangaroo" class="hover:text-blue-500">Kangaroo
+                          </a>
+                          <a href="/tu-dong-aqua" class="hover:text-blue-500">AQUA
+                          </a>
+                          <a href="/tu-dong-lg" class="hover:text-blue-500">LG
+                          </a>
+                          <a href="/tu-dong-hoa-phat" class="hover:text-blue-500">Hoà Phát
+                          </a>
+                          <a href="/tu-dong-1-ngan-dong-1-ngan-mat" class="hover:text-blue-500">Tủ 1 ngăn đông, 1 ngăn
+                            mát
+                          </a>
+                          <a href="/tu-dong?g=1-ngan-dong" class="hover:text-blue-500">Tủ 1 ngăn đông
+                          </a>
+                          <a href="/tu-dong-inverter" class="hover:text-blue-500">Tủ đông có Inverter
+                          </a>
+                          <a href="/tu-dong?p=tu-7-10-trieu" class="hover:text-blue-500">Tủ đông 7 - 10 triệu
+                          </a>
+                          <a href="https://www.dienmayxanh.com/tu-dong?g=duoi-300-lit#c=166&amp;p=89176,202530&amp;o=9&amp;pi=0"
+                            class="hover:text-blue-500">Tủ đông dưới 300 lít
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/Hot-73x72.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Máy
+                    giặt</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Máy
+                    sấy</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap" href="#">Máy lạnh</a>
+                </p>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">MÁY LẠNH
+                            <a href="/may-lanh" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-lanh-tra-gop-0-phan-tram" class="hover:text-blue-500">Trả góp 0 - 0.5%
+                          </a>
+                          <a href="/may-lanh-moi" class="hover:text-blue-500">Đời mới 2023
+                          </a>
+                          <a href="/may-lanh-panasonic" class="hover:text-blue-500">Panasonic
+                          </a>
+                          <a href="/may-lanh-daikin" class="hover:text-blue-500">Daikin
+                          </a>
+                          <a href="/may-lanh-samsung" class="hover:text-blue-500">Samsung
+                          </a>
+                          <a href="/may-lanh-toshiba" class="hover:text-blue-500">Toshiba
+                          </a>
+                          <a href="/may-lanh-sharp" class="hover:text-blue-500">Sharp
+                          </a>
+                          <a href="/may-lanh?g=1-hp" class="hover:text-blue-500">Máy lạnh 1 HP
+                          </a>
+                          <a href="/may-doi-tra/may-lanh" class="hover:text-blue-500">Máy đã qua sử dụng
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">MÁY GIẶT
+                            <a href="/may-giat" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-giat-moi" class="hover:text-blue-500">Đời mới 2023
+                          </a>
+                          <a href="/may-giat-toshiba" class="hover:text-blue-500">Toshiba
+                          </a>
+                          <a href="/may-giat-lg" class="hover:text-blue-500">LG
+                          </a>
+                          <a href="/may-giat-panasonic" class="hover:text-blue-500">Panasonic
+                          </a>
+                          <a href="https://www.dienmayxanh.com/may-giat-samsung" class="hover:text-blue-500">Samsung
+                          </a>
+                          <a href="/may-giat-electrolux" class="hover:text-blue-500">Electrolux
+                          </a>
+                          <a href="/may-giat-aqua-sanyo" class="hover:text-blue-500">AQUA
+                          </a>
+                          <a href="/may-giat?g=cua-truoc" class="hover:text-blue-500">Máy giặt cửa ngang (cửa trước)
+                          </a>
+                          <a href="/may-giat-co-say" class="hover:text-blue-500">Máy giặt sấy
+                          </a>
+                          <a href="/may-giat?p=duoi-5-trieu" class="hover:text-blue-500">Giá dưới 5 triệu
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">MÁY SẤY QUẦN ÁO
+                            <a href="/may-say-quan-ao" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-say-quan-ao?p=tu-5tr-75tr" class="hover:text-blue-500">Giá từ 5 - 10 triệu
+                          </a>
+                          <a href="/may-say-quan-ao-electrolux" class="hover:text-blue-500">Electrolux
+                          </a>
+                          <a href="/may-say-quan-ao-beko" class="hover:text-blue-500">Beko
+                          </a>
+                          <a href="/may-say-quan-ao-candy" class="hover:text-blue-500">Candy
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">PHỤ KIỆN MÁY GIẶT
+                          </p>
+                          <a class="border"></a>
+                          <a href="/gia-do-may-giat" class="hover:text-blue-500">Giá đỡ máy giặt
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/Hot-73x72.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Máy nước
+                    nóng</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap" href="#">Quạt điều
+                    hòa</a>
+                </p>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">QUẠT ĐIỀU HÒA
+                            <a href="/quat-dieu-hoa" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/quat-dieu-hoa-kangaroo" class="hover:text-blue-500">Kangaroo
+                          </a>
+                          <a href="/quat-dieu-hoa-daikiosan" class="hover:text-blue-500">Daikiosan
+                          </a>
+                          <a href="/quat-dieu-hoa-sunhouse" class="hover:text-blue-500">Sunhouse
+                          </a>
+                          <a href="/quat-dieu-hoa-midea" class="hover:text-blue-500">Midea
+                          </a>
+                          <a href="/quat-dieu-hoa-delites" class="hover:text-blue-500">Delites
+                          </a>
+                          <a href="/quat-dieu-hoa?p=tu-1-3-trieu" class="hover:text-blue-500">Từ 1 đến 3 triệu
+                          </a>
+                          <a href="/quat-dieu-hoa?p=tu-3-5-trieu" class="hover:text-blue-500">Từ 3 đến 5 triệu
+                          </a>
+                          <a href="/quat-dieu-hoa?g=duoi-20-m" class="hover:text-blue-500">Quạt mát dưới 20 m²
+                          </a>
+                          <a href="/quat-dieu-hoa?g=tu-20-34-m" class="hover:text-blue-500">Quạt mát từ 20 - 34 m²
+                          </a>
+                          <a href="/quat-dieu-hoa?g=tu-35-50-m" class="hover:text-blue-500">Quạt mát từ 35 - 50 m²
+                          </a>
+                          <a href="/quat-dieu-hoa?g=tren-50-m" class="hover:text-blue-500">Quạt mát trên 50 m²
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">QUẠT
+                            <a href="/quat" class="text-blue-600">Xem tất cả <i class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/quat-treo-tuong" class="hover:text-blue-500">Quạt treo tường
+                          </a>
+                          <a href="/quat-sac-dien" class="hover:text-blue-500">Quạt sạc điện
+                          </a>
+                          <a href="/quat-dung" class="hover:text-blue-500">Quạt đứng
+                          </a>
+                          <a href="/quat-hop" class="hover:text-blue-500">Quạt hộp
+                          </a>
+                          <a href="/quat-lung" class="hover:text-blue-500">Quạt lửng
+                          </a>
+                          <a href="/quat-ban" class="hover:text-blue-500">Quạt bàn
+                          </a>
+                          <a href="/quat-tran" class="hover:text-blue-500">Quạt trần
+                          </a>
+                          <a href="/quat-san" class="hover:text-blue-500">Quạt sàn
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">MÁY NƯỚC NÓNG
+                            <a href="/may-nuoc-nong" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-nuoc-nong?g=lam-nong-truc-tiep" class="hover:text-blue-500">Máy nước nóng trực
+                            tiếp
+                          </a>
+                          <a href="/may-nuoc-nong-nang-luong-mat-troi" class="hover:text-blue-500">Máy nước nóng năng
+                            lượng
+                            mặt trời
+                          </a>
+                          <a href="/may-nuoc-nong-lam-nong-gian-tiep" class="hover:text-blue-500">Máy nước nóng gián
+                            tiếp
+                          </a>
+                          <a href="/may-nuoc-nong-bom-tro-luc" class="hover:text-blue-500">Máy có bơm trợ lực
+                          </a>
+                          <a href="/may-nuoc-nong-ariston" class="hover:text-blue-500">Ariston
+                          </a>
+                          <a href="/may-nuoc-nong-panasonic" class="hover:text-blue-500">Panasonic
+                          </a>
+                          <a href="/may-nuoc-nong-electrolux" class="hover:text-blue-500">Ferroli
+                          </a>
+                          <a href="/may-nuoc-nong-kangaroo" class="hover:text-blue-500">Kangaroo
+                          </a>
+                          <a href="/may-nuoc-nong-beko" class="hover:text-blue-500">Beko
+                          </a>
+                          <a href="/may-nuoc-nong-rossi" class="hover:text-blue-500">Rossi
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/Icons-4-72x72.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Điện gia
+                    dụng</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Sinh
+                    tố</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap" href="#">Xay ép</a>
+                </p>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">ĐIỆN GIA DỤNG
+                          </p>
+                          <a class="border"></a>
+                          <a href="/ban-ui" class="hover:text-blue-500">Bàn ủi
+                          </a>
+                          <a href="/quat" class="hover:text-blue-500">Quạt
+                          </a>
+                          <a href="/quat-dieu-hoa" class="hover:text-blue-500">Quạt điều hòa
+                          </a>
+                          <a href="/may-loc-khong-khi" class="hover:text-blue-500">Máy lọc không khí
+                          </a>
+                          <p class="merged-menus">
+                            <a href="/den-dien-den-sac-den-ban-hoc" class="hover:text-blue-500">Đèn bàn</a>
+                            <a href="/den-dien-den-sac-den-pin" class="hover:text-blue-500">Đèn pin</a>
+                            <a href="/den-dien-den-sac-den-sac" class="hover:text-blue-500">Đèn sạc</a>
+                          </p>
+                          <a href="/den-dien-den-sac-den-bat-muoi" class="hover:text-blue-500">Đèn bắt muỗi
+                          </a>
+                          <a href="/vot-muoi" class="hover:text-blue-500">Vợt muỗi
+                          </a>
+                          <a href="/o-cam-phich-cam" class="hover:text-blue-500">Ổ cắm điện
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">NỒI CÁC LOẠI
+                          </p>
+                          <a class="border"></a>
+                          <a href="/noi-com-dien" class="hover:text-blue-500">Nồi cơm điện
+                          </a>
+                          <a href="/noi-ap-suat" class="hover:text-blue-500">Nồi áp suất
+                          </a>
+                          <a href="/lau-dien" class="hover:text-blue-500">Nồi lẩu điện
+                          </a>
+                          <a href="/noi-chien-khong-dau" class="hover:text-blue-500">Nồi chiên không dầu
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">MÁY XAY CÁC LOẠI
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-xay-sinh-to-may-xay-sinh-to" class="hover:text-blue-500">Máy xay sinh tố
+                          </a>
+                          <a href="/may-xay-sinh-to-may-xay-cam-tay" class="hover:text-blue-500">Máy xay cầm tay
+                          </a>
+                          <a href="/may-xay-sinh-to-may-xay-da-nang" class="hover:text-blue-500">Máy xay đa năng
+                          </a>
+                          <a href="/may-xay-sinh-to-may-hap-va-xay-thuc-an" class="hover:text-blue-500">Máy hấp và xay
+                            thức
+                            ăn
+                          </a>
+                          <a href="/may-xay-thit" class="hover:text-blue-500">Máy xay thịt
+                          </a>
+                          <a href="/may-lam-sua-hat" class="hover:text-blue-500">Máy làm sữa hạt
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">MÁY ÉP TRÁI CÂY
+                            <a href="/may-ep-trai-cay" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-ep-trai-cay?g=may-ep-cham" class="hover:text-blue-500">Máy ép chậm
+                          </a>
+                          <a href="/may-ep-trai-cay?g=may-ep-trai-cay" class="hover:text-blue-500">Máy ép nhanh
+                          </a>
+                          <a href="/may-ep-trai-cay-may-xay-ep-da-nang" class="hover:text-blue-500">Máy xay ép đa năng
+                          </a>
+                          <a href="/may-vat-cam" class="hover:text-blue-500">Máy vắt cam
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">LÒ
+                          </p>
+                          <a class="border"></a>
+                          <a href="/lo-nuong" class="hover:text-blue-500">Lò nướng
+                          </a>
+                          <a href="/lo-vi-song" class="hover:text-blue-500">Lò vi sóng
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">THIẾT BỊ NHÀ BẾP
+                          </p>
+                          <a class="border"></a>
+                          <p class="merged-menus">
+                            <a href="/binh-dun-sieu-toc" class="hover:text-blue-500">Bình đun</a>
+                            <a href="/binh-thuy-dien" class="hover:text-blue-500">Bình thủy điện</a>
+                          </p>
+                          <a href="/may-pha-ca-phe" class="hover:text-blue-500">Máy pha cà phê
+                          </a>
+                          <a href="/may-hut-mui" class="hover:text-blue-500">Máy hút mùi
+                          </a>
+                          <a href="/may-rua-chen" class="hover:text-blue-500">Máy rửa chén
+                          </a>
+                          <a href="/may-nuong-banh-mi" class="hover:text-blue-500">Máy nướng bánh mì
+                          </a>
+                          <a href="/may-danh-trung" class="hover:text-blue-500">Máy đánh trứng
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">THIẾT BỊ SƯỞI ẤM
+                          </p>
+                          <a class="border"></a>
+                          <a href="/quat-suoi" class="hover:text-blue-500">Quạt sưởi
+                          </a>
+                          <a href="/den-suoi" class="hover:text-blue-500">Đèn sưởi
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/Hot-73x72.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Bếp
+                    điện</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Nồi
+                    cơm</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap" href="#">Đồ bếp</a>
+                </p>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">BẾP
+                          </p>
+                          <a class="border"></a>
+                          <a href="/bep-ga" class="hover:text-blue-500">Bếp ga
+                          </a>
+                          <a href="/bep-tu" class="hover:text-blue-500">Bếp từ
+                          </a>
+                          <a href="/bep-hong-ngoai" class="hover:text-blue-500">Bếp hồng ngoại
+                          </a>
+                          <a href="/lo-nuong?g=bep-nuong-dien" class="hover:text-blue-500">Bếp nướng điện
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">NỒI CƠM ĐIỆN
+                          </p>
+                          <a class="border"></a>
+                          <a href="/noi-com-dien?g=noi-com-mini" class="hover:text-blue-500">Nồi mini
+                          </a>
+                          <a href="/noi-com-dien?g=noi-com-dien-tu" class="hover:text-blue-500">Nồi điện tử
+                          </a>
+                          <a href="/noi-com-dien-cao-tan" class="hover:text-blue-500">Nồi cao tần
+                          </a>
+                          <a href="/noi-com-dien?g=noi-com-nap-roi" class="hover:text-blue-500">Nồi nắp rời
+                          </a>
+                          <a href="/noi-com-dien?g=noi-com-nap-gai" class="hover:text-blue-500">Nồi nắp gài
+                          </a>
+                          <a href="/noi-com-dien?g=noi-com-dien-tu-ap-suat" class="hover:text-blue-500">Nồi điện tử áp
+                            suất
+                          </a>
+                          <a href="/noi-com-dien?g=noi-com-dien-ap-suat-cao-tan" class="hover:text-blue-500">Nồi cơm áp
+                            suất
+                            cao
+                            tần
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">NHÀ BẾP
+                          </p>
+                          <a class="border"></a>
+                          <a href="/noi" class="hover:text-blue-500">Nồi, bộ nồi
+                          </a>
+                          <a href="/chao-chong-dinh" class="hover:text-blue-500">Chảo chống dính
+                          </a>
+                          <a href="/dao-keo-thot" class="hover:text-blue-500">Dao, kéo, thớt
+                          </a>
+                          <p class="merged-menus">
+                            <a href="/hop-dung-thuc-pham" class="hover:text-blue-500">Hộp</a>
+                            <a href="/hu-dung-thuc-pham" class="hover:text-blue-500">Hũ đựng thực phẩm</a>
+                          </p>
+                          <a href="/hop-ham-com" class="hover:text-blue-500">Hộp hâm cơm
+                          </a>
+                          <a href="/thau-ro-gao-nuoc" class="hover:text-blue-500">Thau, rổ
+                          </a>
+                          <a href="/va-san" class="hover:text-blue-500">Vá, Sạn
+                          </a>
+                          <a href="/thung-da-ca-da" class="hover:text-blue-500">Thùng đá, ca đá
+                          </a>
+                          <a href="/dung-cu-kep-gap" class="hover:text-blue-500">Dụng cụ kẹp gắp
+                          </a>
+                          <a href="/dung-cu-lam-banh" class="hover:text-blue-500">Dụng cụ làm bánh
+                          </a>
+                          <a href="/vi-thung-nuong" class="hover:text-blue-500">Vỉ, thùng nướng
+                          </a>
+                          <a href="/khay-da-ly-lam-da" class="hover:text-blue-500">Khay, ly làm đá
+                          </a>
+                          <a href="/phu-kien-nha-bep" class="hover:text-blue-500">Phụ kiện nhà bếp
+                          </a>
+                          <a href="/ke" class="hover:text-blue-500">Khay, kệ đựng đồ
+                          </a>
+                          <a href="/voi-rua-chen" class="hover:text-blue-500">Vòi rửa chén
+                          </a>
+                          <a href="/chau-rua-chen" class="hover:text-blue-500">Chậu rửa chén
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">VỆ SINH NHÀ CỬA
+                          </p>
+                          <a class="border"></a>
+                          <a href="/bo-lau-nha" class="hover:text-blue-500">Bộ lau nhà
+                          </a>
+                          <a href="/moc-kep-quan-ao" class="hover:text-blue-500">Kẹp, móc quần áo
+                          </a>
+                          <a href="/phu-kien-may-giat" class="hover:text-blue-500">Phụ kiện máy giặt
+                          </a>
+                          <a href="/ve-sinh-nha-cua" class="hover:text-blue-500">Vệ sinh nhà cửa
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">CHĂM SÓC MẸ VÀ BÉ
+                            <a href="/cham-soc-me-va-be" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-hut-sua" class="hover:text-blue-500">Máy hút sữa
+                          </a>
+                          <a href="/num-ti" class="hover:text-blue-500">Núm ti
+                          </a>
+                          <a href="/ti-gia" class="hover:text-blue-500">Ti giả
+                          </a>
+                          <a href="/coc-tui-tru-sua" class="hover:text-blue-500">Cốc, túi trữ sữa
+                          </a>
+                          <a href="/mieng-lot-tham-sua" class="hover:text-blue-500">Miếng lót thấm sữa
+                          </a>
+                          <a href="/noi-nau-cham" class="hover:text-blue-500">Nồi nấu chậm
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">THIẾT BỊ PHÒNG TẮM
+                          </p>
+                          <a class="border"></a>
+                          <a href="/nap-bon-cau" class="hover:text-blue-500">Nắp bồn cầu
+                          </a>
+                          <a href="/voi-xit-ve-sinh" class="hover:text-blue-500">Vòi xịt vệ sinh
+                          </a>
+                          <a href="/voi-sen" class="hover:text-blue-500">Vòi sen
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">PHÒNG ĂN
+                          </p>
+                          <a class="border"></a>
+                          <a href="/binh-dung-nuoc" class="hover:text-blue-500">Bình đựng nước
+                          </a>
+                          <a href="/binh-ly-giu-nhiet" class="hover:text-blue-500">Bình, ly giữ nhiệt
+                          </a>
+                          <a href="/chen-bat" class="hover:text-blue-500">Tô, chén, dĩa
+                          </a>
+                          <a href="/muong-dua" class="hover:text-blue-500">Đũa - Muỗng
+                          </a>
+                          <a href="/ly-bo-ly" class="hover:text-blue-500">Ly, bộ ly
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">THIẾT BỊ KHÁC
+                          </p>
+                          <a class="border"></a>
+                          <a href="/mu-bao-hiem" class="hover:text-blue-500">Mũ bảo hiểm
+                          </a>
+                          <a href="/ket-sat" class="hover:text-blue-500">Két sắt
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/Hot-73x72.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Máy lọc
+                    nước</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap" href="#">Nồi
+                    chiên</a>
+                </p>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">LỌC NƯỚC
+                            <a href="/may-loc-nuoc" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-loc-nuoc?g=tu-dung" class="hover:text-blue-500">Máy lọc nước RO tủ đứng
+                          </a>
+                          <a href="/may-loc-nuoc?g=lap-am" class="hover:text-blue-500">Máy lọc nước RO âm tủ
+                          </a>
+                          <a href="/may-loc-nuoc?g=de-ban" class="hover:text-blue-500">Máy lọc nước RO để bàn
+                          </a>
+                          <a href="/may-loc-nuoc?g=loc-dien-giai-ion-kiem" class="hover:text-blue-500">Máy lọc nước ion
+                            kiềm
+                          </a>
+                          <a href="/loc-nuoc-khong-dien" class="hover:text-blue-500">Lọc nước không điện
+                          </a>
+                          <a href="/loi-may-loc-nuoc" class="hover:text-blue-500">Lõi máy lọc nước
+                          </a>
+                          <a href="/coc-loc-nuoc" class="hover:text-blue-500">Cốc lọc đầu nguồn
+                          </a>
+                          <a href="/but-thu-nuoc" class="hover:text-blue-500">Bút thử nước
+                          </a>
+                          <a href="/cay-nuoc-nong-lanh" class="hover:text-blue-500">Cây nước nóng lạnh
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">NỒI CHIÊN KHÔNG DẦU
+                            <a href="/noi-chien-khong-dau" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="//noi-chien-khong-dau" class="hover:text-blue-500">Nồi chiên không dầu
+                          </a>
+                          <a href="//noi-chien-khong-dau?g=lo-chien-khong-dau" class="hover:text-blue-500">Lò chiên
+                            không
+                            dầu
+                          </a>
+                          <a href="//noi-chien-khong-dau-noi-chien-khong-dau-ket-hop-hap"
+                            class="hover:text-blue-500">Nồi
+                            chiên
+                            không dầu hơi nước
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/Vector-40x38.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Máy hút
+                    bụi</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap" href="#">Máy rửa
+                    chén</a>
+                </p>
+                <a class="border"></a>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">MÁY HÚT BỤI GIA ĐÌNH
+                            <a href="/may-hut-bui-gia-dinh" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-hut-bui" class="hover:text-blue-500">Hút bụi cây
+                          </a>
+                          <a href="/robot-hut-bui" class="hover:text-blue-500">Robot hút bụi
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">MÁY RỬA CHÉN
+                            <a href="/may-rua-chen" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-rua-chen-mini" class="hover:text-blue-500">Máy rửa chén mini
+                          </a>
+                          <a href="/may-rua-chen?g=may-rua-chen-doc-lap" class="hover:text-blue-500">Máy rửa chén độc
+                            lập
+                          </a>
+                          <a href="/may-rua-chen?g=may-rua-chen-am-tu" class="hover:text-blue-500">Máy rửa chén âm tủ
+                          </a>
+                          <a href="/may-rua-chen-may-say-chen" class="hover:text-blue-500">Máy sấy chén
+                          </a>
+                          <a href="/may-rua-chen-ban-am" class="hover:text-blue-500">Máy rửa chén bán âm
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/Heartbeat-72x72.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Sức
+                    khoẻ</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap" href="#">Làm đẹp</a>
+                </p>
+                <a class="border"></a>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">CHĂM SÓC SỨC KHOẺ
+                            <a href="/thiet-bi-cham-soc-suc-khoe" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-khi-dung" class="hover:text-blue-500">Máy khí dung
+                          </a>
+                          <a href="/may-do-huyet-ap" class="hover:text-blue-500">Máy đo huyết áp
+                          </a>
+                          <a href="/nhiet-ke" class="hover:text-blue-500">Nhiệt kế
+                          </a>
+                          <a href="/may-chay-bo" class="hover:text-blue-500">Máy chạy bộ
+                          </a>
+                          <a href="/xe-dap-tap-the-duc" class="hover:text-blue-500">Xe đạp tập thể dục
+                          </a>
+                          <a href="/ghe-massage" class="hover:text-blue-500">Ghế massage
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">THIẾT BỊ LÀM ĐẸP
+                            <a href="/thiet-bi-lam-dep" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-say-toc" class="hover:text-blue-500">Máy sấy tóc
+                          </a>
+                          <a href="/may-massage" class="hover:text-blue-500">Máy massage
+                          </a>
+                          <a href="/may-rua-mat" class="hover:text-blue-500">Máy rửa mặt
+                          </a>
+                          <a href="/ban-chai-danh-rang" class="hover:text-blue-500">Bàn chải điện
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/Icons10-72x72.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap" href="#">Đồ nghề -
+                    dụng cụ sửa chữa</a>
+                </p>
+                <a class="border"></a>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">THIÊT BỊ ĐIỆN NƯỚC
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-bom-nuoc" class="hover:text-blue-500">Máy bơm nước
+                          </a>
+                          <a href="/may-rua-xe" class="hover:text-blue-500">Máy rửa xe
+                          </a>
+                          <a href="/on-ap" class="hover:text-blue-500">Ổn áp
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">DỤNG CỤ SỬA CHỮA
+                          </p>
+                          <a class="border"></a>
+                          <p class="merged-menus">
+                            <a href="/may-khoan" class="hover:text-blue-500">Máy khoan</a>
+                            <a href="/mui-khoan" class="hover:text-blue-500">Mũi khoan</a>
+                          </p>
+                          <p class="merged-menus">
+                            <a href="/may-mai-goc" class="hover:text-blue-500">Máy cắt</a>
+                            <a href="/may-mai" class="hover:text-blue-500">Máy mài</a>
+                          </p>
+                          <a href="/bo-dung-cu-da-nang" class="hover:text-blue-500">Bộ dụng cụ đa năng
+                          </a>
+                          <p class="merged-menus">
+                            <a href="/co-le-mo-let" class="hover:text-blue-500">Cờ lê - mỏ lết</a>
+                            <a href="/tua-vit" class="hover:text-blue-500">Tua vít</a>
+                          </p>
+                          <p class="merged-menus">
+                            <a href="/kim" class="hover:text-blue-500">Kìm</a>
+                            <a href="/bua" class="hover:text-blue-500">Búa</a>
+                          </p>
+                          <a href="/thuoc-do" class="hover:text-blue-500">Thước đo, cân cầm tay
+                          </a>
+                          <a href="/may-do-khoang-cach" class="hover:text-blue-500">Máy đo khoảng cách
+                          </a>
+                          <p class="merged-menus">
+                            <a href="/o-khoa" class="hover:text-blue-500">Ổ khoá</a>
+                            <a href="/khoa-dien-tu" class="hover:text-blue-500">Khoá điện tử</a>
+                          </p>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/Icons-7-72x72-1.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Điện
+                    thoại</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Laptop</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap" href="#">Tablet</a>
+                </p>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">ĐIỆN THOẠI
+                            <a href="/dien-thoai" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/dien-thoai-apple-iphone" class="hover:text-blue-500">iPhone
+                          </a>
+                          <a href="/dien-thoai-samsung" class="hover:text-blue-500">Samsung
+                          </a>
+                          <a href="/dien-thoai-oppo" class="hover:text-blue-500">Oppo
+                          </a>
+                          <a href="/dien-thoai-xiaomi" class="hover:text-blue-500">Xiaomi
+                          </a>
+                          <a href="/dien-thoai?p=tu-2-4-trieu" class="hover:text-blue-500">Điện thoại từ 2 - 4 triệu
+                          </a>
+                          <a href="/dien-thoai?p=tu-4-7-trieu" class="hover:text-blue-500">Điện thoại từ 4 - 7 triệu
+                          </a>
+                          <a href="/dien-thoai#c=42&amp;r=252,253&amp;pi=0" class="hover:text-blue-500">Điện thoại trên
+                            13
+                            triệu
+                          </a>
+                          <a href="/dien-thoai-tra-gop-0-phan-tram" class="hover:text-blue-500">Điện thoại trả góp 0 -
+                            1%
+                          </a>
+                          <a href="/may-doi-tra/dien-thoai" class="hover:text-blue-500">Điện thoại cũ giá rẻ
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">LAPTOP
+                            <a href="/laptop-ldp" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/laptop-hp-compaq" class="hover:text-blue-500">HP
+                          </a>
+                          <a href="/laptop-asus" class="hover:text-blue-500">Asus
+                          </a>
+                          <a href="/laptop-lenovo" class="hover:text-blue-500">Lenovo
+                          </a>
+                          <a href="/laptop-acer" class="hover:text-blue-500">Acer
+                          </a>
+                          <a href="/laptop-dell" class="hover:text-blue-500">Dell
+                          </a>
+                          <a href="/laptop-msi" class="hover:text-blue-500">MSI
+                          </a>
+                          <a href="/laptop-apple-macbook" class="hover:text-blue-500">MacBook
+                          </a>
+                          <a href="/laptop?g=laptop-gaming" class="hover:text-blue-500">Laptop Gaming
+                          </a>
+                          <a href="/laptop?g=hoc-tap-van-phong" class="hover:text-blue-500">Laptop văn phòng
+                          </a>
+                          <a href="/laptop?p=duoi-10-trieu" class="hover:text-blue-500">Laptop dưới 10 triệu
+                          </a>
+                          <a href="/may-doi-tra/laptop" class="hover:text-blue-500">Laptop cũ giá rẻ
+                          </a>
+                          <a href="/laptop-tra-gop-0-phan-tram" class="hover:text-blue-500">Laptop trả góp 0-1%
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">TABLET
+                            <a href="/may-tinh-bang" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-tinh-bang-apple-ipad" class="hover:text-blue-500">iPad
+                          </a>
+                          <a href="/may-tinh-bang-samsung" class="hover:text-blue-500">Samsung
+                          </a>
+                          <a href="/may-tinh-bang-xiaomi" class="hover:text-blue-500">Xiaomi
+                          </a>
+                          <a href="/may-tinh-bang-nokia" class="hover:text-blue-500">Nokia
+                          </a>
+                          <a href="/may-tinh-bang-huawei" class="hover:text-blue-500">Realme
+                          </a>
+                          <a href="/may-tinh-bang-lenovo" class="hover:text-blue-500">Lenovo
+                          </a>
+                          <a href="/may-tinh-bang-masstel" class="hover:text-blue-500">Masstel
+                          </a>
+                          <a href="/may-tinh-bang#c=522&amp;r=294,295&amp;pi=0" class="hover:text-blue-500">Máy tính
+                            bảng từ
+                            3 -
+                            15 triệu
+                          </a>
+                          <a href="/may-tinh-bang?p=tren-15-trieu" class="hover:text-blue-500">Máy tính bảng trên 15
+                            triệu
+                          </a>
+                          <a href="/may-doi-tra/may-tinh-bang" class="hover:text-blue-500">Máy tính bảng cũ giá rẻ
+                          </a>
+                          <a href="/may-tinh-bang-tra-gop-0-phan-tram" class="hover:text-blue-500">Máy tính bảng trả góp
+                            0-1%
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">MÀN HÌNH
+                            <a href="/man-hinh-may-tinh" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/man-hinh-may-tinh-asus" class="hover:text-blue-500">Màn hình Asus
+                          </a>
+                          <a href="/man-hinh-may-tinh-samsung" class="hover:text-blue-500">Màn hình Samsung
+                          </a>
+                          <a href="/man-hinh-may-tinh-msi" class="hover:text-blue-500">Màn hình MSI
+                          </a>
+                          <a href="/man-hinh-may-tinh-viewsonic" class="hover:text-blue-500">Màn hình Viewsonic
+                          </a>
+                          <a href="/may-doi-tra/man-hinh-may-tinh" class="hover:text-blue-500">Màn hình máy tính cũ giá
+                            rẻ
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">MÁY TÍNH
+                            <a href="/may-tinh-nguyen-bo" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-tinh-nguyen-bo-hp" class="hover:text-blue-500">Máy tính để bàn HP
+                          </a>
+                          <a href="/may-tinh-nguyen-bo-asus" class="hover:text-blue-500">Máy tính để bàn Asus
+                          </a>
+                          <a href="/may-doi-tra/may-tinh-de-ban" class="hover:text-blue-500">Máy tính bộ cũ giá rẻ
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">MÁY IN
+                            <a href="/may-in" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <p class="merged-menus">
+                            <a href="/may-in-brother" class="hover:text-blue-500">Máy in Brother</a>
+                            <a href="/muc-in-brother" class="hover:text-blue-500">Mực in Brother</a>
+                          </p>
+                          <p class="merged-menus">
+                            <a href="/may-in-canon" class="hover:text-blue-500">Máy in Canon</a>
+                            <a href="/muc-in-canon" class="hover:text-blue-500">Mực in Canon</a>
+                          </p>
+                          <p class="merged-menus">
+                            <a href="/may-in-hp" class="hover:text-blue-500">Máy in HP</a>
+                            <a href="/muc-in-hp" class="hover:text-blue-500">Mực in HP</a>
+                          </p>
+                          <a href="/may-in-epson" class="hover:text-blue-500">Máy in Epson
+                          </a>
+                          <a href="/may-doi-tra/may-in" class="hover:text-blue-500">Máy in cũ giá rẻ
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/Icons-8-72x72.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Phụ
+                    kiện</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap" href="#">Đồng hồ</a>
+                </p>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">ĐỒNG HỒ THỜI TRANG
+                            <a href="/dong-ho" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/dong-ho-deo-tay-nam" class="hover:text-blue-500">Đồng hồ nam
+                          </a>
+                          <a href="/dong-ho-deo-tay-nu" class="hover:text-blue-500">Đồng hồ nữ
+                          </a>
+                          <a href="/dong-ho-deo-tay-casio" class="hover:text-blue-500">Đồng hồ Casio
+                          </a>
+                          <a href="/dong-ho-deo-tay-orient" class="hover:text-blue-500">Đồng hồ Orient
+                          </a>
+                          <a href="/dong-ho-deo-tay-citizen" class="hover:text-blue-500">Đồng hồ Citizen
+                          </a>
+                          <a href="/may-doi-tra/dong-ho-thanh-ly" class="hover:text-blue-500">Đồng hồ thanh lý giá rẻ
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">ĐỒNG HỒ THÔNG MINH
+                            <a href="/dong-ho-thong-minh-ldp" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/dong-ho-thong-minh-apple" class="hover:text-blue-500">Apple Watch
+                          </a>
+                          <a href="/dong-ho-thong-minh-samsung" class="hover:text-blue-500">Samsung
+                          </a>
+                          <a href="/dong-ho-thong-minh-befit" class="hover:text-blue-500">BeFit
+                          </a>
+                          <a href="/dong-ho-thong-minh-xiaomi" class="hover:text-blue-500">Xiaomi
+                          </a>
+                          <a href="/may-doi-tra/dong-ho-thong-minh" class="hover:text-blue-500">Đồng hồ thông minh cũ
+                            giá rẻ
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">PHỤ KIỆN ĐIỆN THOẠI
+                            <a href="/phu-kien" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/sac-dtdd" class="hover:text-blue-500">Pin sạc dự phòng
+                          </a>
+                          <a href="/cap-dien-thoai" class="hover:text-blue-500">Cáp sạc
+                          </a>
+                          <a href="/tai-nghe" class="hover:text-blue-500">Tai nghe
+                          </a>
+                          <a href="/dan-loa-dvd-loa-bluetooth" class="hover:text-blue-500">Loa nghe nhạc
+                          </a>
+                          <a href="/the-nho-dien-thoai" class="hover:text-blue-500">Thẻ nhớ
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">PHỤ KIỆN LAPTOP
+                          </p>
+                          <a class="border"></a>
+                          <a href="/usb" class="hover:text-blue-500">USB
+                          </a>
+                          <a href="/o-cung-di-dong" class="hover:text-blue-500">Ổ cứng
+                          </a>
+                          <a href="/chuot-may-tinh" class="hover:text-blue-500">Chuột
+                          </a>
+                          <a href="/ban-phim" class="hover:text-blue-500">Bàn phím
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">PHỤ KIỆN ĐIỆN MÁY
+                          </p>
+                          <a class="border"></a>
+                          <a href="/cap-hdmi-cap-tivi" class="hover:text-blue-500">Cáp HDMI, Cáp tivi
+                          </a>
+                          <a href="/khung-treo-tivi" class="hover:text-blue-500">Khung treo Tivi
+                          </a>
+                          <a href="/dieu-khien-tivi" class="hover:text-blue-500">Điều khiển Tivi
+                          </a>
+                          <a href="/gia-do-may-giat" class="hover:text-blue-500">Giá đỡ máy giặt
+                          </a>
+                          <a href="/dan-loa-dvd-loa-thanh" class="hover:text-blue-500">Loa soundbar
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">THIẾT BỊ MẠNG
+                            <a href="/thiet-bi-mang" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/thiet-bi-mang-tp-link" class="hover:text-blue-500">Thiết bị mạng TP-LINK
+                          </a>
+                          <a href="/thiet-bi-mang-totolink" class="hover:text-blue-500">Thiết bị mạng TotoLink
+                          </a>
+                          <a href="/thiet-bi-mang-asus" class="hover:text-blue-500">Thiết bị mạng Asus
+                          </a>
+                          <a href="/thiet-bi-mang-xiaomi" class="hover:text-blue-500">Thiết bị mạng Xiaomi
+                          </a>
+                          <a href="/thiet-bi-mang-linksys" class="hover:text-blue-500">Thiết bị mạng LINKSYS
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/Bicycle-72x72.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap after:content-[',']"
+                    href="#">Xe đạp</a>
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap" href="#">Phụ kiện xe
+                    đạp</a>
+                </p>
+                <a class="border"></a>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">XE ĐẠP
+                            <a href="//xe-dap" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/xe-dap-giant" class="hover:text-blue-500">Giant
+                          </a>
+                          <a href="/xe-dap-twitter-dua-road-bike#c=9758&amp;m=29717&amp;o=13&amp;pi=0"
+                            class="hover:text-blue-500">Twitter
+                          </a>
+                          <a href="/xe-dap-fornix" class="hover:text-blue-500">Fornix
+                          </a>
+                          <a href="/xe-dap-thong-nhat" class="hover:text-blue-500">Thống Nhất
+                          </a>
+                          <a href="/xe-dap-pacific" class="hover:text-blue-500">Pacific
+                          </a>
+                          <a href="/xe-dap-txed" class="hover:text-blue-500">Txed
+                          </a>
+                          <a href="/xe-dap-phoenix" class="hover:text-blue-500">Phoenix
+                          </a>
+                          <a href="/xe-dap-java" class="hover:text-blue-500">Java
+                          </a>
+                          <a href="/xe-dap-merida" class="hover:text-blue-500">Merida
+                          </a>
+                          <a href="/xe-dap-gammax" class="hover:text-blue-500">Gammax
+                          </a>
+                          <a href="/xe-dap-tap-the-thao" class="hover:text-blue-500">Xe đạp thể thao
+                          </a>
+                          <a href="/xe-dap-dia-hinh-mountain-bike-mtb" class="hover:text-blue-500">Xe đạp địa hình
+                          </a>
+                          <a href="/xe-dap-duong-pho-city-bike" class="hover:text-blue-500">Xe đạp thành phố
+                          </a>
+                          <a href="/xe-dap-tre-em" class="hover:text-blue-500">Xe đạp trẻ em
+                          </a>
+                          <a href="/xe-dap-dua-road-bike" class="hover:text-blue-500">Xe đạp đua
+                          </a>
+                          <a href="/xe-dap-tra-gop-0-phan-tram" class="hover:text-blue-500">Xe đạp trả góp 0%
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">PHỤ KIỆN XE ĐẠP
+                            <a href="/phu-kien-xe-dap" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/mu-bao-hiem-boc-mu" class="hover:text-blue-500">Mũ bảo hiểm, bọc mũ
+                          </a>
+                          <a href="/binh-nuoc-gong-nuoc" class="hover:text-blue-500">Bình nước, gọng nước
+                          </a>
+                          <a href="/chuong-kinh-den-xe" class="hover:text-blue-500">Chuông, kính, đèn xe
+                          </a>
+                          <a href="/tui-xe-dap" class="hover:text-blue-500">Túi xe đạp
+                          </a>
+                          <a href="/ban-dap-chan-chong" class="hover:text-blue-500">Bàn đạp, chân chống
+                          </a>
+                          <a href="/khoa-xe-dap" class="hover:text-blue-500">Khoá xe đạp
+                          </a>
+                          <a href="/bom-va-xe-dap" class="hover:text-blue-500">Bơm, vá xe đạp
+                          </a>
+                          <a href="/yen-xe-dap-boc-yen" class="hover:text-blue-500">Yên xe đạp, bọc yên
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">ĐỒ CHƠI VẬN ĐỘNG
+                            <a href="/do-choi-van-dong" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/patin" class="hover:text-blue-500">Patin
+                          </a>
+                          <a href="/scooter" class="hover:text-blue-500">Scooter
+                          </a>
+                          <a href="/xe-thang-bang-tre-em" class="hover:text-blue-500">Xe thăng bằng
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/Icons-9-72x72-1.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap" href="#">Máy cũ,
+                    trưng bày</a>
+                </p>
+                <a class="border"></a>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">TIVI, DÀN LOA ÂM THANH
+                            <a href="https://www.dienmayxanh.com/may-doi-tra/tivi?type=7" class="text-blue-600">Xem tất
+                              cả <i class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-doi-tra/tivi?type=7" class="hover:text-blue-500">Tivi
+                          </a>
+                          <a href="/may-doi-tra/dan-loa-dvd?type=7" class="hover:text-blue-500">Loa Karaoke
+                          </a>
+                          <a href="/may-doi-tra/micro" class="hover:text-blue-500">Micro
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">ĐIỆN GIA DỤNG
+                            <a href="/may-doi-tra/dien-gia-dung" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-doi-tra/quat?type=7" class="hover:text-blue-500">Quạt
+                          </a>
+                          <a href="/may-doi-tra/noi-com-dien?type=7" class="hover:text-blue-500">Nồi cơm
+                          </a>
+                          <a href="/may-doi-tra/may-xay-sinh-to?type=7" class="hover:text-blue-500">Máy xay sinh tố
+                          </a>
+                          <a href="/may-doi-tra/may-ep-trai-cay" class="hover:text-blue-500">Máy ép trái cây
+                          </a>
+                          <a href="/may-doi-tra/bep-tu?type=7" class="hover:text-blue-500">Bếp điện
+                          </a>
+                          <a href="/may-doi-tra/bep-gas" class="hover:text-blue-500">Bếp gas
+                          </a>
+                          <a href="/may-doi-tra/ban-ui" class="hover:text-blue-500">Bàn ủi
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">TỦ LẠNH, TỦ ĐÔNG
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-doi-tra/tu-lanh?type=7" class="hover:text-blue-500">Tủ lạnh
+                          </a>
+                          <a href="/may-doi-tra/tu-dong" class="hover:text-blue-500">Tủ đông
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">MÁY LẠNH, QUẠT ĐIỀU HÒA
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-doi-tra/may-lanh" class="hover:text-blue-500">Máy lạnh
+                          </a>
+                          <a href="/may-doi-tra/quat-dieu-hoa?type=7" class="hover:text-blue-500">Quạt điều hòa
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">MÁY GIẶT, MÁY SẤY
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-doi-tra/may-giat?type=7" class="hover:text-blue-500">Máy giặt
+                          </a>
+                          <a href="/may-doi-tra/may-say-quan-ao" class="hover:text-blue-500">Máy sấy quần áo
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">MÁY LỌC NƯỚC, NƯỚC NÓNG
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-doi-tra/may-loc-nuoc?type=7" class="hover:text-blue-500">Máy lọc nước
+                          </a>
+                          <a href="/may-doi-tra/may-nuoc-nong" class="hover:text-blue-500">Máy nước nóng
+                          </a>
+                          <a href="/may-doi-tra/cay-nuoc-nong-lanh" class="hover:text-blue-500">Cây nước nóng lạnh
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">PHỤ KIỆN, LOA
+                            <a href="/may-doi-tra/phu-kien" class="text-blue-600">Xem tất cả <i
+                                class="fa-solid fa-caret-right"></i></a>
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-doi-tra/sac-dtdd" class="hover:text-blue-500">Pin sạc dự phòng
+                          </a>
+                          <a href="/may-doi-tra/chuot-may-tinh" class="hover:text-blue-500">Chuột
+                          </a>
+                          <p class="merged-menus">
+                            <a href="/may-doi-tra/cap-dien-thoai" class="hover:text-blue-500">Cáp sạc</a>
+                            <a href="/may-doi-tra/adapter-sac" class="hover:text-blue-500">Adapter sạc, chuyển đổi</a>
+                          </p>
+                          <a href="/may-doi-tra/tai-nghe?g=co-day" class="hover:text-blue-500">Tai nghe
+                          </a>
+                          <a href="/may-doi-tra/phu-kien-dien-may" class="hover:text-blue-500">Phụ kiện điện máy
+                          </a>
+                          <a href="/may-doi-tra/dan-loa-dvd?g=loa-vi-tinh&amp;type=2" class="hover:text-blue-500">Loa
+                            laptop
+                          </a>
+                        </li>
+                      </div>
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">VIỄN THÔNG
+                          </p>
+                          <a class="border"></a>
+                          <a href="/may-doi-tra/dien-thoai" class="hover:text-blue-500">Điện thoại
+                          </a>
+                          <a href="/may-doi-tra/may-tinh-bang" class="hover:text-blue-500">Máy tính bảng
+                          </a>
+                          <a href="/may-doi-tra/laptop" class="hover:text-blue-500">Laptop
+                          </a>
+                          <a href="/may-doi-tra/dong-ho-thong-minh" class="hover:text-blue-500">Đồng hồ thông minh
+                          </a>
+                          <a href="/may-doi-tra/dong-ho-thanh-ly" class="hover:text-blue-500">Đồng hồ thanh lý
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+              <li class="border w-60 flex justify-between items-center bg-white dropdown-list">
+                <p class="flex items-center">
+                  <img class="p-1" src="https://cdn.tgdd.vn//content/stroke-72x72.png" alt="label menu" width="25">
+                  <a class="hover:text-blue-400 hover:font-semibold pr-1 block whitespace-no-wrap" href="#">Dịch vụ hữu
+                    ích</a>
+                </p>
+                <i class="fa-solid fa-chevron-right pr-1 block nav-icon"></i>
+                <ul class="dropdown-item absolute hidden bg-white text-gray-700 top-1 left-60 p-2.5 h-full">
+                  <div class="flex">
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">DỊCH VỤ HỮU ÍCH
+                          </p>
+                          <a class="border"></a>
+                          <a href="https://www.dichvutantam.com/ve-sinh-may-lanh-treo-tuong?utm_source=dienmayxanh.com&amp;utm_medium=referral&amp;utm_campaign=menu-ml"
+                            class="hover:text-blue-500">Vệ sinh máy lạnh
+                            <span class="label-new menuitem_label">Hot</span>
+                          </a>
+                          <a href="https://www.dichvutantam.com/bao-duong-va-thay-loi-loc-nuoc?utm_source=dienmayxanh.com&amp;utm_medium=referral&amp;utm_campaign=menu-mln"
+                            class="hover:text-blue-500">Bảo dưỡng máy lọc nước
+                          </a>
+                          <a href="https://www.thegioididong.com/sim-so-dep" class="hover:text-blue-500">Sim số, thẻ cào
+                          </a>
+                          <a href="https://www.thegioididong.com/utilities/thanh-toan-tra-gop"
+                            class="hover:text-blue-500">Đóng
+                            tiền trả góp
+                          </a>
+                          <a href="https://www.thegioididong.com/tien-ich/bao-hiem-o-to-xe-may"
+                            class="hover:text-blue-500">Bảo
+                            hiểm Ô tô - Xe máy
+                          </a>
+                          <a href="https://www.bachhoaxanh.com/" class="hover:text-blue-500">Đi chợ online
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5">
+                      <div class="">
+                        <li class="w-60 max-xl:w-52 max-lg:w-40 max-md:w-24 flex flex-col gap-0.5">
+                          <p class="font-medium text-xs">DỊCH VỤ TẬN TÂM
+                          </p>
+                          <a class="border"></a>
+                          <a href="https://www.dichvutantam.com/ve-sinh-may-lanh-treo-tuong?utm_source=dienmayxanh.com&amp;utm_medium=referral&amp;utm_campaign=menu-ml"
+                            class="hover:text-blue-500">Vệ sinh máy lạnh Tận Tâm
+                            <span class="label-new menuitem_label">Hot</span>
+                          </a>
+                          <a href="https://www.dichvutantam.com/bao-duong-va-thay-loi-loc-nuoc?utm_source=dienmayxanh.com&amp;utm_medium=referral&amp;utm_campaign=menu-mln"
+                            class="hover:text-blue-500">Bảo dưỡng máy lọc nước
+                          </a>
+                        </li>
+                      </div>
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                    <aside class="mr-2.5 w-60">
+                    </aside>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="space-x-3.5 text-base flex ">
+            <a class="border"></a>
+            <a href="#" class="hover:opacity-90">Tivi</a>
+            <a href="#" class="hover:opacity-90">Tủ lạnh</a>
+            <a href="#" class="hover:opacity-90">Máy giặt</a>
+            <a href="#" class="hover:opacity-90">Máy sấy</a>
+            <a href="#" class="hover:opacity-90">Gia dụng</a>
+            <a href="#" class="hover:opacity-90">Lọc nước</a>
+            <a href="#" class="hover:opacity-90">Tủ đông</a>
+            <a href="#" class="hover:opacity-90">Máy lạnh</a>
+            <a href="#" class="hover:opacity-90">Nồi cơm</a>
+            <a href="#" class="hover:opacity-90">Nồi chiên</a>
+            <a href="#" class="hover:opacity-90">Bếp điện</a>
+            <a href="#" class="hover:opacity-90">Robot hút bụi</a>
+            <a href="#" class="hover:opacity-90">Loa</a>
+            <a href="#" class="hover:opacity-90">Điện thoại</a>
+            <a href="#" class="hover:opacity-90">Máy cũ</a>
+          </div>
+        </nav>
+      </section>
+    </div>
+  </header>
+  <article
+    class="mx-auto flex max-w-7xl items-center pb-2.5 mt-2.5 border-b text-base max-xl:text-sm max-md:text-xs justify-center">
+    <ul class="flex gap-x-1.5">
+      <li class="px-3 active:bg-blue-600 hover:bg-blue-600 hover:text-white rounded-md"><a href=""><i
+            class="fa-solid fa-house"></i></a></li>
+      <a class="border"></a>
+      <li class="px-3 active:bg-blue-600 hover:bg-blue-600 hover:text-white rounded-md"><a href="">Tivi</a></li>
+      <a class="border"></a>
+      <li class="px-3 active:bg-blue-600 hover:bg-blue-600 hover:text-white rounded-md"><a href="">Tủ lạnh</a></li>
+      <a class="border"></a>
+      <li class="px-3 active:bg-blue-600 hover:bg-blue-600 hover:text-white rounded-md"><a href="">máy lạnh</a></li>
+      <a class="border"></a>
+      <li class="px-3 active:bg-blue-600 hover:bg-blue-600 hover:text-white rounded-md"><a href="">Máy giặt</a></li>
+      <a class="border"></a>
+      <li class="px-3 active:bg-blue-600 hover:bg-blue-600 hover:text-white rounded-md"><a href="">Điện thoại - Máy
+          tính</a></li>
+      <a class="border"></a>
+      <li class="px-3 active:bg-blue-600 hover:bg-blue-600 hover:text-white rounded-md"><a href="">Đồng hồ</a></li>
+      <a class="border"></a>
+      <li class="px-3 active:bg-blue-600 hover:bg-blue-600 hover:text-white rounded-md"><a href="">Gia dụng</a></li>
+      <a class="border"></a>
+      <li class="px-3 active:bg-blue-600 hover:bg-blue-600 hover:text-white rounded-md"><a href="">Thiết bị thông
+          minh</a></li>
+      <a class="border"></a>
+      <li class="px-3 active:bg-blue-600 hover:bg-blue-600 hover:text-white rounded-md"><a href="">Sức khỏe - Thể
+          thao</a></li>
+      <a class="border"></a>
+      <li class="px-3 active:bg-blue-600 hover:bg-blue-600 hover:text-white rounded-md"><a href="">Mẹo vặt</a></li>
+    </ul>
+  </article>
+
+  <main class="mx-auto max-w-7xl flex px-2 pt-2.5">
+    <div class="content_left ">
+      <div class="flex">
+        <ul class="w-3/5 ">
+          <img class="pt-5" src="./img/content.jpg" alt="">
+          <div>
+            <h3 class="font-semibold text-2xl m-2">Tai nghe Xiaomi của nước nào? Có tốt không? Có nên mua tai nghe
+              Xiaomi không?</h3>
+            <div class="gap-3 flex text-sm items-center">
+              <label class="lbox py-1 px-3 rounded-md">Điện thoại - Máy tính</label>
+              <span class="opacity-50">Cập nhật 17 giờ trước</span>
+            </div>
+          </div>
+        </ul>
+        <ul class="w-2/5 ">
+          <ul class="listpost pl-5 flex flex-col">
+            <li>
+              <h3 class="text-xl font-bold pt-5">Bài viết xem nhiều</h3>
+            </li>
+            <li class="py-3 border-b-2"><a href="#">
+                <label class="relative">1</label>
+                <span>Tất tần tật về chương trình ưu đãi app Quà Tặng Vip, link tải và cách sử dụng</span>
+              </a></li>
+            <li class="py-3 border-b-2"><a href="#">
+                <label class="relative">2</label>
+                <span>Cách đổi mật khẩu cho máy tính win 10 nhanh nhất</span>
+              </a></li>
+            <li class="py-3 border-b-2"><a href="#">
+                <label class="relative">3</label>
+                <span>4 lý do khiến điều hòa đột ngột bị ngắt khi đang chạy vàcách khắc phục</span>
+              </a></li>
+            <li class="py-3 border-b-2"><a href="#">
+                <label class="relative">4</label>
+                <span>8 cách đuổi và diệt muỗi hiệu quả nhất dể phòng tránh vi rút Zika</span>
+              </a></li>
+            <li class="py-3"><a href="#">
+                <label class="relative">5</label>
+                <span>5 lý do khiến dàn nóng máy lạnh kêu to và cách khắc phục</span>
+              </a></li>
+          </ul>
+        </ul>
+      </div>
+      <div class=" relative">
+        <ul class="pb-20">
+          <li class="flex py-2.5 border-t-2">
+            <div class=" w-1/4 pr-5">
+              <img src="./img/post1.jpg" alt="">
+            </div>
+            <div class="w-3/4">
+              <h3 class="font-medium text-xl ">Hướng dẫn cách sử dụng máy giặt LG hiệu quả và tiết kiệm điện</h3>
+              <div class="gap-3 flex text-sm items-center mt-2.5">
+                <label class="lbox py-1 px-3 rounded-md">Máy giặt LG</label>
+                <span class="opacity-50">Cập nhật vài giây trước</span>
+              </div>
+            </div>
+          </li>
+          <li class="flex py-2.5 border-t-2">
+            <div class=" w-1/4 pr-5">
+              <img src="./img/post2.jpg" alt="">
+            </div>
+            <div class="w-3/4">
+              <h3 class="font-medium text-xl ">Cách giặt giày, túi vải canvas đơn giản, hiệu quả tại nhà</h3>
+              <div class="gap-3 flex text-sm items-center mt-2.5">
+                <label class="lbox py-1 px-3 rounded-md">Mẹo vặt sử dụng máy giặt</label>
+                <span class="opacity-50">Cập nhật 1 giờ trước</span>
+              </div>
+            </div>
+          </li>
+          <li class="flex py-2.5 border-t-2">
+            <div class=" w-1/4 pr-5">
+              <img src="./img/post3.jpg" alt="">
+            </div>
+            <div class="w-3/4">
+              <h3 class="font-medium text-xl ">Apple Watch Series 9 có chống nước không? Các tính năng mới của Apple
+                Watch Series 9</h3>
+              <div class="gap-3 flex text-sm items-center mt-2.5">
+                <label class="lbox py-1 px-3 rounded-md">Đồng hồ - Mắt kính</label>
+                <span class="opacity-50">Cập nhật 1 giờ trước</span>
+              </div>
+            </div>
+          </li>
+          <li class="flex py-2.5 border-t-2">
+            <div class=" w-1/4 pr-5">
+              <img src="./img/post4.jpg" alt="">
+            </div>
+            <div class="w-3/4">
+              <h3 class="font-medium text-xl ">Có nên mua Apple Watch Series 9 ngay thời điểm 2023 này không?</h3>
+              <div class="gap-3 flex text-sm items-center mt-2.5">
+                <label class="lbox py-1 px-3 rounded-md">Tư vấn chọn mua đồng hồ</label>
+                <span class="opacity-50">Cập nhật 1 giờ trước</span>
+              </div>
+            </div>
+          </li>
+          <li class="py-2.5 border-t-2 text-white">
+            <div class="flex justify-between pt-5 px-5 bg-black">
+              <h2 class="font-normal text-xl">Video nổi bật</h2>
+              <a href="https://www.youtube.com/user/dienmaycom"
+                class="text-yellow-300 after:content-['≫'] after:pl-1">Xem thêm video tại kênh Youtube DMX</a>
+            </div>
+            <div class="px-10 bg-black">
+              <div class="swiper swiper_right py-8">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide p-0 m-0">
+                    <div class="flex flex-col">
+                      <img class="h-64" src="./img/thum1.jpg" alt="">
+                      <div class="flex items-center">
+                        <div class="ml-2">
+                          <p class="font-bold">3 Cách làm bánh gạo tokbokki bằng cơm nguội cực đơn giản tại nhà</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="flex flex-col">
+                      <img class="h-64" src="./img/thum2.jpg" alt="">
+                      <div class="flex items-center">
+                        <div class="ml-2">
+                          <p class="font-bold">2 cách làm gỏi bưởi hải sản và cá hồi đơn giản, ngon khó cưỡng</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="flex flex-col">
+                      <img class="h-64" src="./img/thum3.jpg" alt="">
+                      <div class="flex items-center">
+                        <div class="ml-2">
+                          <p class="font-bold">2 Cách nấu canh chua lươn ngon ngọt thanh mát giải nhiệt cho ngày hè</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="flex flex-col">
+                      <img class="h-64" src="./img/thum4.jpg" alt="">
+                      <div class="flex items-center">
+                        <div class="ml-2">
+                          <p class="font-bold">Cách làm cà phê bọt biển sầu riêng thơm béo, ngon, độc lạ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </li>
+          <li class="flex py-2.5 border-t-2">
+            <div class=" w-1/4 pr-5">
+              <img src="./img/post5.jpg" alt="">
+            </div>
+            <div class="w-3/4">
+              <h3 class="font-medium text-xl ">Hướng dẫn sử dụng máy trộn bột và các lưu ý khi dùng máy</h3>
+              <div class="gap-3 flex text-sm items-center mt-2.5">
+                <label class="lbox py-1 px-3 rounded-md">Cách sử dụng sản phẩm gia dụng</label>
+                <span class="opacity-50">Cập nhật 2 giờ trước</span>
+              </div>
+            </div>
+          </li>
+          <li class="flex py-2.5 border-t-2">
+            <div class=" w-1/4 pr-5">
+              <img src="./img/post6.jpg" alt="">
+            </div>
+            <div class="w-3/4">
+              <h3 class="font-medium text-xl ">10 thương hiệu tivi cao cấp nhất hiện nay</h3>
+              <div class="gap-3 flex text-sm items-center mt-2.5">
+                <label class="lbox py-1 px-3 rounded-md">Tư vấn chọn mua tivi</label>
+                <span class="opacity-50">Cập nhật vài giây trước</span>
+              </div>
+            </div>
+          </li>
+          <li class="flex py-2.5 border-t-2">
+            <div class=" w-1/4 pr-5">
+              <img src="./img/post7.jpg" alt="">
+            </div>
+            <div class="w-3/4">
+              <h3 class="font-medium text-xl ">Hướng dẫn cách chọn mua máy đánh trứng có trộn bột tiết kiệm và phù hợp
+              </h3>
+              <div class="gap-3 flex text-sm items-center mt-2.5">
+                <label class="lbox py-1 px-3 rounded-md">Tư vấn chọn mua đồ dùng gia đình</label>
+                <span class="opacity-50">Cập nhật vài giây trước</span>
+              </div>
+            </div>
+          </li>
+          <li class="flex py-2.5 border-t-2">
+            <div class=" w-1/4 pr-5">
+              <img src="./img/post8.jpg" alt="">
+            </div>
+            <div class="w-3/4">
+              <h3 class="font-medium text-xl ">Hướng dẫn tự vệ sinh máy giặt cửa trước đơn giản tại nhà</h3>
+              <div class="gap-3 flex text-sm items-center mt-2.5">
+                <label class="lbox py-1 px-3 rounded-md">Mẹo vặt sử dụng máy giặt</label>
+                <span class="opacity-50">Cập nhật vài giây trước</span>
+              </div>
+            </div>
+          </li>
+          <li class="flex py-2.5 border-t-2">
+            <div class=" w-1/4 pr-5">
+              <img src="./img/post9.jpg" alt="">
+            </div>
+            <div class="w-3/4">
+              <h3 class="font-medium text-xl ">Cách kết nối loa Bluetooth với tivi Samsung đơn giản và nhanh chóng</h3>
+              <div class="gap-3 flex text-sm items-center mt-2.5">
+                <label class="lbox py-1 px-3 rounded-md">Cách sử dụng tivi</label>
+                <span class="opacity-50">Cập nhật vài giây trước</span>
+              </div>
+            </div>
+          </li>
+          <div class="flex justify-center">
+            <div class="flex justify-center m-3 border-blue-600 border rounded-md w-96 p-3 items-center text-blue-600 absolute bottom-2 hover:bg-blue-600 hover:text-white">
+              <button class="more_content w-full" onclick="showContent()">Xem thêm bài viết Kinh nghiệm hay <i class="fa-solid fa-angle-down"></i></button>
+            </div>
+          </div>
+          <li>
+            <ul class="list_content hidden">
+              <li class="flex py-2.5 border-t-2">
+                <div class=" w-1/4 pr-5">
+                  <img src="./img/post9.jpg" alt="">
+                </div>
+                <div class="w-3/4">
+                  <h3 class="font-medium text-xl ">Cách kết nối loa Bluetooth với tivi Samsung đơn giản và nhanh chóng
+                  </h3>
+                  <div class="gap-3 flex text-sm items-center mt-2.5">
+                    <label class="lbox py-1 px-3 rounded-md">Cách sử dụng tivi</label>
+                    <span class="opacity-50">Cập nhật vài giây trước</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content_right">
+      <div class="text-sm flex justify-end">
+        <a class="border"></a>
+        <div class="pl-3 py-2 flex items-center gap-2">
+          <i class="fa-regular fa-circle-user text-2xl"></i>
+          <span> Đăng ký / Đăng nhập </span>
+        </div>
+      </div>
+      <div class="pt-5 pl-5">
+        <div class="flex justify-between items-center">
+          <h3 class="text-2xl font-bold   ">Món ngon nổi bật</h3>
+          <a class="text-blue-400 after:content-['>']" href="/vao-bep">Xem tất cả</a>
+        </div>
+        <div class="swiper swiper_left py-8">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-3 bg-gray-100 px-4">
+                <img class="h-64" src="./img/slide1.jpg" alt="">
+                <div class="flex items-center">
+                  <div class="ml-2">
+                    <p class="font-bold">3 Cách làm bánh gạo tokbokki bằng cơm nguội cực đơn giản tại nhà</p>
+                    <p class="opacity-50 font-sm"> Dễ • Làm trong 15’</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-3 bg-gray-100 px-4">
+                <img class="h-64" src="./img/slide2.jpg" alt="">
+                <div class="flex items-center">
+                  <div class="ml-2">
+                    <p class="font-bold">2 cách làm gỏi bưởi hải sản và cá hồi đơn giản, ngon khó cưỡng</p>
+                    <p class="opacity-50 font-sm"> Dễ • Làm trong 30</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-3 bg-gray-100 px-4">
+                <img class="h-64" src="./img/slide3.jpg" alt="">
+                <div class="flex items-center">
+                  <div class="ml-2">
+                    <p class="font-bold">2 Cách nấu canh chua lươn ngon ngọt thanh mát giải nhiệt cho ngày hè</p>
+                    <p class="opacity-50 font-sm"> Dễ • Làm trong 20</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-3 bg-gray-100 px-4">
+                <img class="h-64" src="./img/slide4.jpg" alt="">
+                <div class="flex items-center">
+                  <div class="ml-2">
+                    <p class="font-bold">Cách làm cà phê bọt biển sầu riêng thơm béo, ngon, độc lạ</p>
+                    <p class="opacity-50 font-sm"> Dễ • Làm trong 20</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-3 bg-gray-100 px-4">
+                <img class="h-64" src="./img/slide5.jpg" alt="">
+                <div class="flex items-center">
+                  <div class="ml-2">
+                    <p class="font-bold">Cách làm cơm niêu siêu thơm ngon và đơn giản ngay tại nhà</p>
+                    <p class="opacity-50 font-sm"> Dễ • Làm trong 15’</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="pl-5">
+        <span class="flex items-center text-xl font-semibold"> Khuyến mãi hot <img class="w-10 h-10w-10"
+            src="./img/icons8-fire.png" alt=""></span>
+        <img src="./img/banner1.png" alt="">
+        <img src="./img/banner2.png" alt="">
+        <img src="./img/banner3.png" alt="">
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t-2">
+    <section class="mx-auto max-w-7xl flex px-2 pt-2.5 sm:flex-row sm:justify-between text-sm">
+      <div class="flex flex-col footer_col1">
+        <ul>
+          <li><a href="">Tích điểm Quà tặng VIP</a></li>
+          <li><a href="">DV vệ sinh máy lạnh</a></li>
+          <li><a href="">Lịch sử mua hàng</a></li>
+          <li><a href="">Tìm hiểu về mua trả góp</a></li>
+          <li>
+            <p class="more" onclick="show()">Xem thêm <i class="fa-solid fa-caret-down"></i></p>
+          </li>
+          <li>
+            <ul class="list hidden">
+              <li><a href="">Chính sách bảo hành</a></li>
+              <li><a href="">Chính sách đổi trả</a></li>
+              <li><a href="">Giao hàng, lắp đặt</a></li>
+              <li><a href="">Hướng dẫn mua online</a></li>
+              <li><a href="">Bán hàng doanh nghiệp</a></li>
+              <li><a href="">Phiếu mua hàng</a></li>
+              <li><a href="">In hóa đơn điện tử</a></li>
+              <li><a href="">Quy chế hoạt động</a></li>
+              <li><a href="">Chính sách xử lý dữ liệu cá nhân</a></li>
+              <li><a href="">Nội quy cửa hàng</a></li>
+              <li><a href="">Chất lượng phục vụ</a></li>
+              <li><a href="">Cảnh báo giả mạo</a></li>
+              <li><a href="">Chính sách khui hộp sản phẩm Apple</a></li>
+              <li><a href="">Hợp tác bán hàng</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-col footer_col2">
+        <ul>
+          <li><a href="">Giới thiệu công ty (MWG.vn)</a></li>
+          <li><a href="">Tuyển dụng</a></li>
+          <li><a href="">Gửi góp ý, khiếu nại</a></li>
+          <li><a href="">Tìm siêu thị (3361 shop)</a></li>
+          <li><a href="">Xem bản mobile</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col footer_col3">
+        <p>
+          <strong>Tổng đài hỗ trợ</strong>
+          (Miễn phí gọi)
+        </p>
+        <p class="flex gap-2">
+          <span>Khiếu nại:</span> <a class="text-blue-600" href="tel:18001063">1800.1063</a>
+          (8:00 - 21:30)
+        </p>
+        <p class="flex gap-2">
+          <span>Bảo hành:</span> <a class="text-blue-600" href="tel:18001065">1800.1065</a>
+          (8:00 - 21:00)
+        </p>
+      </div>
+      <div class="flex flex-col footer_col4">
+        <div class="flex gap-4 mt-5 items-center text-blue-600">
+          <a class="flex gap-2" href=""><img class=" h-7" src="./img/ficon1.png" alt="">2124.2k Fan</a>
+          <a class="flex gap-2" href=""><img class=" h-7" src="./img/ficon2.png" alt="">646k Đăng ký</a>
+          <a class="flex gap-2" href=""><img class=" h-7" src="./img/ficon3.png" alt="">Zalo ĐMX</a>
+        </div>
+        <div class="flex gap-2 mt-5">
+          <a href=""><img src="./img/ficon4.png" alt=""></a>
+          <a href=""><img src="./img/ficon5.png" alt=""></a>
+          <a href=""><img src="./img/ficon6.png" alt=""></a>
+          <a href=""><img src="./img/ficon7.png" alt=""></a>
+        </div>
+        <div class="flex gap-2">
+          <div class="gap-2 mt-5">
+            <p>Website cùng tập đoàn</p>
+            <ul class="flex flex-wrap gap-3 mt-5">
+              <li><a href=""><img class="layer" src="./img/Layer1.png" alt=""></a></li>
+              <li><a href=""><img class="layer" src="./img/Layer2.png" alt=""></a></li>
+              <li><a href=""><img class="layer" src="./img/Layer3.png" alt=""></a></li>
+              <li><a href=""><img class="layer" src="./img/Layer4.png" alt=""></a></li>
+              <li><a href=""><img class="layer" src="./img/Layer5.png" alt=""></a></li>
+              <li><a href=""><img class="layer" src="./img/Layer6.png" alt=""></a></li>
+              <li><a href=""><img class="layer" src="./img/Layer7.png" alt=""></a></li>
+              <li><a href=""><img class="layer" src="./img/Layer8.png" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <div class="mx-auto max-w-7xl flex px-2 py-4 text-xs">
+    <section>
+      <p>
+        © 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH &amp; ĐT TP.HCM cấp ngày 02/01/2007.
+        GPMXH: 21/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 11/01/2021.<br>
+        Địa chỉ: 128 Trần Quang Khải, P.Tân Định, Q.1, TP.Hồ Chí Minh. Địa chỉ liên hệ và gửi chứng từ: Lô T2-1.2, Đường
+        D1, Đ. D1, P.Tân Phú, TP.Thủ Đức, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email: cskh@thegioididong.com. Chịu
+        trách nhiệm nội dung: Huỳnh Văn Tốt. Email: Tot.huynhvan@thegioididong.com.
+        <a class="text-blue-600" rel="nofollow" href="/thoa-thuan-su-dung-trang-mxh">Xem chính sách sử dụng</a>
+
+      </p>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

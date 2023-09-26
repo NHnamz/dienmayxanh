@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .nav-bg {
+    background-color: #4a90e2;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown-list:hover .dropdown-item {
+    display: block;
+  }
+  .nav-icon {
+    color: #999;
+  }
+  .item {
+    width: 15.33%;
+  }
+  .nav_font {
+    font-size: 15px; /* 14px */
+    line-height: 1.25rem; /* 20px */
+  }
+
+  .content_left{
+    width: 70%;
+  }
+  .content_right{
+    width: 30%;
+  }
+
+  .lbox{
+    background: #e5e5e5;
+    color: #999;
+  }
+  .listpost li label {
+    float: left;
+    padding: 5px 10px 0 10px;
+    background: #288ad6;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+    margin-right: 10px;
+    border-radius: 4px 4px 0 0;
+}
+
+  .listpost label:after {
+    content: "";
+    border-top: 10px solid #288ad6;
+    border-left: 16px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.footer_col1{
+  width: 24%;
+}
+.footer_col2{
+  width: 19%;
+}
+.footer_col3{
+  width: 28%;
+}
+.footer_col4{
+  width: 29%;
+}
+.layer {
+  height: 1.54rem/* 24px */;
+}
+}
