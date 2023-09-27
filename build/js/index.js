@@ -44,5 +44,6 @@ const show = () => {
 }
 
 const showContent = () => {
+  document.querySelector(".more_content").classList.add("hidden")
   document.querySelector(".list_content").classList.remove("hidden")
 }

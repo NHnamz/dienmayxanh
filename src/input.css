@@ -73,4 +73,7 @@
 .layer {
   height: 1.54rem/* 24px */;
 }
+.active{
+  background: blue;
+}
 }
